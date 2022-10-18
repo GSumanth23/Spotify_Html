@@ -1,0 +1,44 @@
+/* on the screens that are 960px or less  */
+/* small screen laptops */
+@media screen and (max-width:992px){
+    .mobile-logo{
+        display: block;
+    }
+
+    .main-logo{
+        display: none;
+    }
+    aside{
+        padding: 0;
+        align-items: center;
+       
+    }
+    .nav-icon{
+        margin:0 auto
+    }
+    .top-nav li a span{
+        display: none;
+    }
+
+    .songs-card-section{
+        flex-wrap: wrap;
+        row-gap: 12px;
+    }
+
+    .song-card{
+        width: 20%;
+    }
+}
+
+/* tablets */
+@media screen and (max-width:768px){
+  
+}
+/* Mobiles */
+@media screen and (max-width:576px){
+   
+    .song-card{
+        width: 45%;
+    }
+}
+

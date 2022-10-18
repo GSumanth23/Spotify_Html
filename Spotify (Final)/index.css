@@ -1,0 +1,271 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* //My Code  */
+*{
+    box-sizing: border-box;
+  
+}
+
+body{
+    min-height:200vh;
+    background: #121212;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+
+}
+
+.body-container{
+    display: flex;
+}
+
+aside{
+    width: 12%;
+    min-width: 50px;
+    min-height: 100vh;
+    background: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+    position: fixed;
+}
+
+main{
+   width: 88%;
+    min-height: 200vh;
+    background: #121212;
+    margin-left: 12%;
+}
+
+.main-logo{
+    max-width: 200px;
+    width: 100%;
+   
+}
+
+.font-bold{
+    font-weight: 600;
+}
+
+aside a {
+    color: #f2f2f2;
+    text-decoration: none;
+}
+
+.top-nav li{
+margin-top: 15px;
+font-size: 14px;
+}
+
+.top-nav li a {
+    display: flex;
+    align-items: center;
+    column-gap: 15px;
+}
+
+.nav-icon{
+    width: 20px;
+    height: 20px;
+    flex-shrink: 0;
+    
+}
+
+.bottom-nav li{
+    font-size: 11px;
+    margin-bottom: 1rem;
+}
+
+.mobile-logo{
+    display: none;
+}
+
+header{
+    background: rgba(0, 0, 0, 0.532);
+    height: 50px;
+    width: 88%;
+    position: fixed;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 15px;
+    align-items: center;
+}
+
+.arrow-header{
+    color: white;
+    display: flex;
+    column-gap: 15px;
+}
+
+.arrow-header div{
+    background: #000;
+    padding: 5px;
+    border-radius:25px;
+}
+
+.arrow-header svg{
+    height: 20px;
+    width: 20px;
+}
+
+
+.buttons-header{
+    display: flex;
+    column-gap: 15px;
+    align-items: center;
+}
+
+.buttons-header a {
+    text-decoration: none;
+   transition: transform 500ms;
+    font-size: 14px;
+}
+
+.buttons-header a:hover{
+    transform: scale(1.2);
+}
+
+.login-btn{
+    background: white !important;
+    color: black;
+    padding: 8px;
+    border-radius: 15px;
+}
+
+.signup-btn{
+    color: white;
+}
+
+.songs-grid{
+    color: #f2f2f2;
+   
+    margin-top: 70px;
+    padding: 0 15px;
+   
+}
+
+.songs-head{
+  
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.songs-head h2{
+    font-size: 20px;
+}
+
+.songs-head h4{
+    font-size: 14px;
+}
+
+.songs-card-section{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 12px;
+    column-gap: 12px;
+}
+
+.song-card{
+    width: 11%;
+    background:#181818 ;
+    padding: 12px;
+    border-radius: 6px;
+    display: block;
+}
+
+.song-card:hover{
+    background: #282828;
+    cursor: pointer;
+}
+
+.song-card:hover .play-btn{
+    display: flex;
+}
+.song-album-cover{
+    position: relative;
+}
+
+.song-album-cover img{
+    width: 100%;
+    height: auto;
+    border-radius: 6px;
+
+}
+
+.songs-info{
+    margin-top: 12px;
+}
+
+.songs-info h3{
+    font-weight: 600;
+}
+
+.songs-info p{
+    font-size: 13px;
+    color: lightgray;
+    margin-top: 12px;
+}
+
+/* 1fdf64 */
+
+.play-btn{
+    background: #1fdf64;
+    height: 32px;
+    width: 32px;
+    transition: display 1s;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    border-radius: 16px;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    display: none;
+}
+
+.play-btn svg{
+    height: 20px;
+    width: 20px;
+}
